@@ -62,8 +62,8 @@ def build_html(jobs: list[dict]) -> str:
       font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
       margin: 0;
       min-height: 100vh;
-      background: linear-gradient(145deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
-      color: #e8e8e8;
+      background: linear-gradient(145deg, #0d1117 0%, #161b22 40%, #21262d 100%);
+      color: #e6edf3;
       padding: clamp(0.75rem, 4vw, 2.5rem);
       font-size: clamp(14px, 2vw, 15px);
       line-height: 1.5;
@@ -73,18 +73,18 @@ def build_html(jobs: list[dict]) -> str:
       font-weight: 700;
       font-size: clamp(1.35rem, 4vw, 1.85rem);
       letter-spacing: -0.02em;
-      color: #ff6b6b;
+      color: #2dd4bf;
       margin: 0 0 1.25rem 0;
-      text-shadow: 0 0 24px rgba(255, 107, 107, 0.25);
+      text-shadow: 0 0 24px rgba(45, 212, 191, 0.3);
     }}
     .table-wrap {{
-      background: rgba(22, 33, 62, 0.6);
+      background: rgba(22, 27, 34, 0.85);
       border-radius: 12px;
       overflow-x: auto;
       overflow-y: hidden;
       -webkit-overflow-scrolling: touch;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
-      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(45, 212, 191, 0.12);
     }}
     table {{
       width: 100%;
@@ -97,16 +97,16 @@ def build_html(jobs: list[dict]) -> str:
       font-size: 0.7rem;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: #ff6b6b;
-      background: rgba(15, 15, 35, 0.8);
+      color: #2dd4bf;
+      background: rgba(13, 17, 23, 0.95);
       padding: 0.75rem 0.6rem;
       text-align: left;
-      border-bottom: 1px solid rgba(255, 107, 107, 0.2);
+      border-bottom: 1px solid rgba(45, 212, 191, 0.25);
       white-space: nowrap;
     }}
     td {{
       padding: 0.75rem 0.6rem;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     }}
     td:nth-child(1), td:nth-child(6), td:nth-child(7), td:nth-child(8) {{
       white-space: nowrap;
@@ -114,16 +114,16 @@ def build_html(jobs: list[dict]) -> str:
     th:nth-child(6) {{ min-width: 6rem; }}
     th:nth-child(7) {{ min-width: 5.5rem; }}
     tr:last-child td {{ border-bottom: none; }}
-    tr:hover td {{ background: rgba(255, 107, 107, 0.04); }}
-    tr:nth-child(even) td {{ background: rgba(0, 0, 0, 0.12); }}
-    tr:nth-child(even):hover td {{ background: rgba(255, 107, 107, 0.06); }}
+    tr:hover td {{ background: rgba(45, 212, 191, 0.06); }}
+    tr:nth-child(even) td {{ background: rgba(0, 0, 0, 0.15); }}
+    tr:nth-child(even):hover td {{ background: rgba(45, 212, 191, 0.08); }}
     tr.rejected td {{
-      background: rgba(180, 60, 60, 0.25) !important;
-      color: rgba(255, 200, 200, 0.9);
+      background: rgba(180, 60, 60, 0.22) !important;
+      color: rgba(255, 220, 220, 0.95);
     }}
-    tr.rejected:hover td {{ background: rgba(180, 60, 60, 0.35) !important; }}
-    a {{ color: #7eb8da; text-decoration: none; font-weight: 500; }}
-    a:hover {{ color: #a8d4f0; text-decoration: underline; }}
+    tr.rejected:hover td {{ background: rgba(180, 60, 60, 0.32) !important; }}
+    a {{ color: #5eead4; text-decoration: none; font-weight: 500; }}
+    a:hover {{ color: #99f6e4; text-decoration: underline; }}
     @media (max-width: 768px) {{
       body {{ padding: 0.75rem; }}
       .table-wrap {{ border-radius: 8px; }}
