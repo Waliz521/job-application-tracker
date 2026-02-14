@@ -1,0 +1,8 @@
+# Local data
+job_tracker.db
+jobs_export.csv
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
